@@ -46,11 +46,11 @@ async def on_message(message):
         return
     if message.author == bot.user or message.webhook_id is not None:
         return
-    if str(message.author.id) in [str(lime_id), str(seemly_id)]:
+    if str(message.author.id) in [str(my_id), str(seemly_id)]:
         return
 
     if copy_mode:
-        if str(message.author.id) == str(my_id):
+        if str(message.author.id) == str(lime_id):
             new_message = random.choice([
                 "Asshole!!", "Bitch!", "Cunt", "Fuck u!!!",
                 "Mother fucker.", "Nigga", "quickNutter",

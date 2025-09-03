@@ -56,6 +56,7 @@ async def on_message(message):
                 "Mother fucker.", "Nigga", "quickNutter",
                 "Sex slave", "Whore.", "zesty!!"
             ])
+            await message.delete()
         else:
             new_message = message.content
 

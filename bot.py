@@ -8,7 +8,7 @@ import random
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 my_id = os.getenv('MY_ID')
-lime_id = os.getenv('LiME_ID')
+lime_id = os.getenv('LIME_ID')
 seemly_id = os.getenv('SEEMLY_ID')
 
 # --- Intents & Bot Setup ---
@@ -52,9 +52,9 @@ async def on_message(message):
     if copy_mode:
         if str(message.author.id) == str(lime_id):
             new_message = random.choice([
-                "Asshole!!", "Bitch!", "Cunt", "Fuck u!!!",
-                "Mother fucker.", "Nigga", "quickNutter",
-                "Sex slave", "Whore.", "zesty!!"
+                "Asshole!!", "Bitch!", "Cunt", "Degenrate", "Erectile Dysfunction bearer", "Fuck u!!!", "grandmother fucker", "Horny bastard",
+                "Imbecile", "jobless!!", "karen", "limeoba🍋", "Mother fucker.", "Nigga chigga", "ortracized", "penis", "quickNutter", "Roblox Enjoyer",
+                "Sex slave", "Trump", "Ur-anus", "Very dumb", "Whore.", "Xenophobic" "yes daddy mhm", "zesty!!"
             ])
             await message.delete()
         else:
